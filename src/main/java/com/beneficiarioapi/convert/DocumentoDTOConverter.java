@@ -5,7 +5,9 @@ import com.beneficiarioapi.Entity.Documento;
 import com.beneficiarioapi.dto.BeneficiarioDTO;
 import com.beneficiarioapi.dto.DocumentoDTO;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DocumentoDTOConverter {
 
     private ModelMapper modelMapper;

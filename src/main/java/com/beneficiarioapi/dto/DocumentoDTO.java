@@ -1,20 +1,19 @@
 package com.beneficiarioapi.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Getter
 @Setter
-@Data
 public class DocumentoDTO {
-
-    public DocumentoDTO(String tipoDocumento, String descricao) {
-        this.tipoDocumento = tipoDocumento;
-        this.descricao = descricao;
-    }
-
     private Long id;
     private String tipoDocumento;
     private String descricao;
-
+    @JsonIgnore
+    private BeneficiarioDTO beneficiarioDTO;
 }
