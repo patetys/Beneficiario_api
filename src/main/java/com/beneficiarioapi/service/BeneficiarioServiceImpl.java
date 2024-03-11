@@ -33,10 +33,6 @@ public class BeneficiarioServiceImpl implements BeneficiarioService {
     @Override
     public BeneficiarioDTO cadastrarBeneficiario(BeneficiarioDTO beneficiarioDTO) {
 
-       // List<Documento> listDocuments = beneficiarioDTO.getDocumentos().stream().collect(Collectors.toList());
-
-      //  beneficiarioDTO.setDocumentos(listDocuments);
-
         Beneficiario novoBeneficiario = new Beneficiario();
 
         novoBeneficiario.setNome(beneficiarioDTO.getNome());
