@@ -9,12 +9,12 @@ import java.util.Date;
 import java.util.List;
 
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Entity
-public class Beneficiario implements  Serializable{
+public class Beneficiario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,8 +30,10 @@ public class Beneficiario implements  Serializable{
 
     private Date dataAtualizacao = new Date();
 
-    @OneToMany(mappedBy = "beneficiario", cascade = CascadeType.ALL)
-    private List<Documento> documentos = new ArrayList<>();;
+    @OneToMany(targetEntity = Documento.class,cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "beneficiario_id", referencedColumnName = "id")
+    private List<Documento> documentos = new ArrayList<Documento>();
+
 
 
 

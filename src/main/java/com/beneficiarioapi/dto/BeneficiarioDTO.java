@@ -4,9 +4,14 @@ package com.beneficiarioapi.dto;
 
 
 import com.beneficiarioapi.Entity.Documento;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
+
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -19,6 +24,8 @@ import java.util.List;
 @Setter
 public class BeneficiarioDTO {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotNull(message = "Nome é obrigatório")
     @NotBlank(message = "Nome é obrigatório")
@@ -30,5 +37,5 @@ public class BeneficiarioDTO {
     @NotBlank(message = "Data de nascimento é obrigatório")
     private Date dataNascimento;
 
-    private List<Documento> documentos;
+    private List<Documento> documentos = new ArrayList<>();;
 }

@@ -2,14 +2,17 @@ package com.beneficiarioapi.service;
 
 import com.beneficiarioapi.Entity.Beneficiario;
 
+import com.beneficiarioapi.Entity.Documento;
 import com.beneficiarioapi.convert.BeneficiarioDTOConverter;
 import com.beneficiarioapi.dto.BeneficiarioDTO;
 import com.beneficiarioapi.repository.BeneficiarioRepository;
+import com.beneficiarioapi.repository.DocumentoRepository;
 import org.apache.velocity.exception.ResourceNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,11 +21,13 @@ import java.util.stream.Collectors;
 public class BeneficiarioServiceImpl implements BeneficiarioService {
 
     private final BeneficiarioRepository beneficiarioRepository;
+    private final DocumentoRepository documentoRepository;
     private final BeneficiarioDTOConverter beneficiarioDTOConverter;
     private final ModelMapper modelMapper;
 
-    public BeneficiarioServiceImpl(BeneficiarioRepository beneficiarioRepository, ModelMapper modelMapper, BeneficiarioDTOConverter beneficiarioDTOConverter) {
+    public BeneficiarioServiceImpl(BeneficiarioRepository beneficiarioRepository, DocumentoRepository documentoRepository, ModelMapper modelMapper, BeneficiarioDTOConverter beneficiarioDTOConverter) {
         this.beneficiarioRepository = beneficiarioRepository;
+        this.documentoRepository = documentoRepository;
         this.modelMapper = modelMapper;
         this.beneficiarioDTOConverter = beneficiarioDTOConverter;
     }
@@ -31,13 +36,14 @@ public class BeneficiarioServiceImpl implements BeneficiarioService {
     public BeneficiarioDTO cadastrarBeneficiario(BeneficiarioDTO beneficiarioDTO) {
 
         Beneficiario novoBeneficiario = new Beneficiario();
+        Documento documento = new Documento();
 
         novoBeneficiario.setNome(beneficiarioDTO.getNome());
         novoBeneficiario.setTelefone(beneficiarioDTO.getTelefone());
         novoBeneficiario.setDataNascimento(beneficiarioDTO.getDataNascimento());
         novoBeneficiario.setDocumentos(beneficiarioDTO.getDocumentos());
-
         Beneficiario beneficiario = beneficiarioRepository.save(novoBeneficiario);
+
         return beneficiarioDTOConverter.convertBeneficiariotoBeneficiarioDTO(beneficiario);
     }
 

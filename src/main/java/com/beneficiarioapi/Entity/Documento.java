@@ -9,14 +9,12 @@ import org.hibernate.annotations.OnDeleteAction;
 import java.io.Serializable;
 import java.util.Date;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Documento implements Serializable {
+public class Documento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,9 +28,10 @@ public class Documento implements Serializable {
 
     private Date dataAtualizacao = new Date();
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Beneficiario.class, optional = false)
-    @JoinColumn(name = "beneficiario_id", insertable = true,updatable = true, nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "beneficiario_id")
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
     private Beneficiario beneficiario;
 
 }

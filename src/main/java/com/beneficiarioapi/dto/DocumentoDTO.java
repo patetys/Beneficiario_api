@@ -1,6 +1,9 @@
 package com.beneficiarioapi.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -16,8 +19,6 @@ import jakarta.validation.constraints.NotBlank;
 @Setter
 public class DocumentoDTO {
 
-    @Valid
-
     private Long id;
     @NotNull(message = "Tipo de documento é obrigatório")
     @NotBlank(message = "Tipo de documento é obrigatório")
@@ -27,4 +28,5 @@ public class DocumentoDTO {
     private String descricao;
     @JsonIgnore
     private BeneficiarioDTO beneficiarioDTO;
+
 }
