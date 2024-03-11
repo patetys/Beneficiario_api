@@ -1,10 +1,8 @@
 package com.beneficiarioapi.service;
 
 import com.beneficiarioapi.Entity.Documento;
-import com.beneficiarioapi.convert.BeneficiarioDTOConverter;
 import com.beneficiarioapi.convert.DocumentoDTOConverter;
 import com.beneficiarioapi.dto.DocumentoDTO;
-import com.beneficiarioapi.repository.BeneficiarioRepository;
 import com.beneficiarioapi.repository.DocumentoRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
