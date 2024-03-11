@@ -7,5 +7,4 @@ import java.util.List;
 public interface DocumentoService {
 
     List<DocumentoDTO> listarDocumentosPorIdBeneficiario(Long id);
-    DocumentoDTO cadastrarDocumento(Long id, DocumentoDTO documentoDTO);
 }
