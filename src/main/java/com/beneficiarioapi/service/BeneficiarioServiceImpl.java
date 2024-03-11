@@ -1,7 +1,7 @@
 package com.beneficiarioapi.service;
 
 import com.beneficiarioapi.Entity.Beneficiario;
-import com.beneficiarioapi.Entity.Documento;
+
 import com.beneficiarioapi.convert.BeneficiarioDTOConverter;
 import com.beneficiarioapi.dto.BeneficiarioDTO;
 import com.beneficiarioapi.repository.BeneficiarioRepository;
@@ -9,10 +9,7 @@ import org.apache.velocity.exception.ResourceNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Date;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
