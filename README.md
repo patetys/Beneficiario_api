@@ -80,7 +80,7 @@ Url para cessar o banco de dados local H2 em http://localhost:8080/h2-console
 ```
 * returna http 200 com o beneficiario e documentos criado:
 * retorna http 400 se violar alguma regra de obrigatoriedade ou formato.
-```
+ 
  
 
  
