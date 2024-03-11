@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class Beneficiario implements  Serializable{
     private Date dataAtualizacao = new Date();
 
     @OneToMany(mappedBy = "beneficiario", cascade = CascadeType.ALL)
-    private List<Documento> documentos;
+    private List<Documento> documentos = new ArrayList<>();;
 
 
 

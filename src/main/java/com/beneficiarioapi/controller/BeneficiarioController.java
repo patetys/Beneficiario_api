@@ -32,27 +32,12 @@ public class BeneficiarioController {
         this.modelMapper = modelMapper;
     }
 
-    @Operation(summary = "Realiza o upload de arquivos", method = "POST")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Upload de arquivo realizado com sucesso"),
-            @ApiResponse(responseCode = "422", description = "Dados de requisição inválida"),
-            @ApiResponse(responseCode = "400", description = "Parametros inválidos"),
-            @ApiResponse(responseCode = "500", description = "Erro ao realizar o upload de arquivo"),
-    })
     @PostMapping()
     public ResponseEntity<BeneficiarioDTO> cadastrarBeneficiario(@RequestBody @Valid BeneficiarioDTO BeneficiarioDto) {
         BeneficiarioDTO beneficiarioDTO = beneficiarioService.cadastrarBeneficiario(BeneficiarioDto);
         return new ResponseEntity<>(beneficiarioDTO,HttpStatus.CREATED);
     }
 
-    @Operation(summary = "Busca dados de profissionais por idade e cargo exercido", method = "GET")
-
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Busca realizada com sucesso"),
-            @ApiResponse(responseCode = "422", description = "Dados de requisição inválida"),
-            @ApiResponse(responseCode = "400", description = "Parametros inválidos"),
-            @ApiResponse(responseCode = "500", description = "Erro ao realizar busca dos dados"),
-    })
     @GetMapping()
     public ResponseEntity<List<BeneficiarioDTO>> listarBeneficiarios() {
         List<BeneficiarioDTO> listaBeneficiarios = beneficiarioService.listarBeneficiarios();
@@ -63,14 +48,7 @@ public class BeneficiarioController {
         return  ResponseEntity.ok(listaBeneficiarios);
     }
 
-    @Operation(summary = "Busca dados de profissionais por idade e cargo exercido", method = "GET")
 
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Busca realizada com sucesso"),
-            @ApiResponse(responseCode = "422", description = "Dados de requisição inválida"),
-            @ApiResponse(responseCode = "400", description = "Parametros inválidos"),
-            @ApiResponse(responseCode = "500", description = "Erro ao realizar busca dos dados"),
-    })
     @GetMapping("/{id}/documentos")
     public ResponseEntity<List<DocumentoDTO>> listarDocumentosPorIdBeneficiario(@PathVariable Long id) {
         List<DocumentoDTO> listaDocumetos = documentoService.listarDocumentosPorIdBeneficiario(id);
@@ -81,13 +59,6 @@ public class BeneficiarioController {
         return ResponseEntity.ok(listaDocumetos);
     }
 
-    @Operation(summary = "Realiza o upload de arquivos", method = "PUT")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Upload de arquivo realizado com sucesso"),
-            @ApiResponse(responseCode = "422", description = "Dados de requisição inválida"),
-            @ApiResponse(responseCode = "400", description = "Parametros inválidos"),
-            @ApiResponse(responseCode = "500", description = "Erro ao realizar o upload de arquivo"),
-    })
     @PutMapping("/{id}")
     public ResponseEntity<BeneficiarioDTO> atualizarBeneficiario(@PathVariable long id,  @RequestBody @Valid BeneficiarioDTO beneficiarioDTO) {
         BeneficiarioDTO atualizaBeneficiario = beneficiarioService.atualizarBeneficiario(id,beneficiarioDTO);
@@ -95,13 +66,6 @@ public class BeneficiarioController {
     }
 
 
-    @Operation(summary = "Realiza o upload de arquivos", method = "DELETE")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Upload de arquivo realizado com sucesso"),
-            @ApiResponse(responseCode = "422", description = "Dados de requisição inválida"),
-            @ApiResponse(responseCode = "400", description = "Parametros inválidos"),
-            @ApiResponse(responseCode = "500", description = "Erro ao realizar o upload de arquivo"),
-    })
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> removerBeneficiario(@PathVariable("id") Long id) {
        beneficiarioService.removerBeneficiario(id);

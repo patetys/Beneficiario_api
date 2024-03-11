@@ -30,8 +30,8 @@ public class Documento implements Serializable {
 
     private Date dataAtualizacao = new Date();
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "beneficiario_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Beneficiario.class, optional = false)
+    @JoinColumn(name = "beneficiario_id", insertable = true,updatable = true, nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Beneficiario beneficiario;
 

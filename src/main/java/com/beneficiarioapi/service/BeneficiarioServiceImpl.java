@@ -4,15 +4,16 @@ import com.beneficiarioapi.Entity.Beneficiario;
 import com.beneficiarioapi.Entity.Documento;
 import com.beneficiarioapi.convert.BeneficiarioDTOConverter;
 import com.beneficiarioapi.dto.BeneficiarioDTO;
-import com.beneficiarioapi.dto.DocumentoDTO;
 import com.beneficiarioapi.repository.BeneficiarioRepository;
 import org.apache.velocity.exception.ResourceNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 
@@ -32,12 +33,18 @@ public class BeneficiarioServiceImpl implements BeneficiarioService {
     @Override
     public BeneficiarioDTO cadastrarBeneficiario(BeneficiarioDTO beneficiarioDTO) {
 
-        List<Documento> listDocuments = beneficiarioDTO.getDocumentos().stream()
-                                             .collect(Collectors.toList());
+       // List<Documento> listDocuments = beneficiarioDTO.getDocumentos().stream().collect(Collectors.toList());
 
-        beneficiarioDTO.setDocumentos(listDocuments);
+      //  beneficiarioDTO.setDocumentos(listDocuments);
 
-        Beneficiario beneficiario = beneficiarioRepository.save(beneficiarioDTOConverter.convertBeneficiarioDTOtoBeneficiario(beneficiarioDTO));
+        Beneficiario novoBeneficiario = new Beneficiario();
+
+        novoBeneficiario.setNome(beneficiarioDTO.getNome());
+        novoBeneficiario.setTelefone(beneficiarioDTO.getTelefone());
+        novoBeneficiario.setDataNascimento(beneficiarioDTO.getDataNascimento());
+        novoBeneficiario.setDocumentos(beneficiarioDTO.getDocumentos());
+
+        Beneficiario beneficiario = beneficiarioRepository.save(novoBeneficiario);
         return beneficiarioDTOConverter.convertBeneficiariotoBeneficiarioDTO(beneficiario);
     }
 
