@@ -89,37 +89,25 @@ Url para cessar o banco de dados local H2 em http://localhost:8080/h2-console
 * retorna:
 ```
 #!json
- [
-    {
-        "id": 2,
-        "nome": "Benjamin Samuel ssss",
-        "telefone": "11976471477",
-        "dataNascimento": "2024-03-11T06:17:18.815+00:00",
-        "documentos": [
-            {
-                "id": 4,
-                "tipoDocumento": "CPF",
-                "descricao": "CPF",
-                "dataInclusao": "2024-03-11T12:51:16.236+00:00",
-                "dataAtualizacao": "2024-03-11T12:51:16.236+00:00"
-            },
-            {
-                "id": 5,
-                "tipoDocumento": "RG",
-                "descricao": "RG",
-                "dataInclusao": "2024-03-11T12:51:16.237+00:00",
-                "dataAtualizacao": "2024-03-11T12:51:16.237+00:00"
-            },
-            {
-                "id": 6,
-                "tipoDocumento": "CNH",
-                "descricao": "CNH",
-                "dataInclusao": "2024-03-11T12:51:16.237+00:00",
-                "dataAtualizacao": "2024-03-11T12:51:16.237+00:00"
-            }
-        ]
-    }
-]
+{
+    "nome": "João das colves ",
+    "telefone": "11976471477",
+    "dataNascimento": "2024-03-11T06:17:18.815Z",
+    "documentos": [
+        {
+            "tipoDocumento": "CPF",
+            "descricao": "CPF"
+        },
+        {
+            "tipoDocumento": "RG",
+            "descricao": "RG"
+        },
+          {
+            "tipoDocumento": "CNH",
+            "descricao": "CNH"
+        }
+    ]
+}
 ```
 * retorna http 404 se não encontrar endereço do cliente
 
