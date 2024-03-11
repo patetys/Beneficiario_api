@@ -105,8 +105,8 @@ Url para cessar o banco de dados local H2 em http://localhost:8080/h2-console
           {
             "tipoDocumento": "CNH",
             "descricao": "CNH"
-        }
-    ]
+}
+]
 }
 ```
 * retorna http 404 se não encontrar endereço do cliente
