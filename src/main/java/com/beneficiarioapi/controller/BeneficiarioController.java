@@ -32,12 +32,14 @@ public class BeneficiarioController {
         this.modelMapper = modelMapper;
     }
 
+    @ExceptionHandler
     @PostMapping()
     public ResponseEntity<BeneficiarioDTO> cadastrarBeneficiario(@RequestBody @Valid BeneficiarioDTO BeneficiarioDto) {
         BeneficiarioDTO beneficiarioDTO = beneficiarioService.cadastrarBeneficiario(BeneficiarioDto);
         return new ResponseEntity<>(beneficiarioDTO,HttpStatus.CREATED);
     }
 
+    @ExceptionHandler
     @GetMapping()
     public ResponseEntity<List<BeneficiarioDTO>> listarBeneficiarios() {
         List<BeneficiarioDTO> listaBeneficiarios = beneficiarioService.listarBeneficiarios();
@@ -49,6 +51,7 @@ public class BeneficiarioController {
     }
 
 
+    @ExceptionHandler
     @GetMapping("/{id}/documentos")
     public ResponseEntity<List<DocumentoDTO>> listarDocumentosPorIdBeneficiario(@PathVariable Long id) {
         List<DocumentoDTO> listaDocumetos = documentoService.listarDocumentosPorIdBeneficiario(id);
@@ -59,13 +62,14 @@ public class BeneficiarioController {
         return ResponseEntity.ok(listaDocumetos);
     }
 
+    @ExceptionHandler
     @PutMapping("/{id}")
     public ResponseEntity<BeneficiarioDTO> atualizarBeneficiario(@PathVariable long id,  @RequestBody @Valid BeneficiarioDTO beneficiarioDTO) {
         BeneficiarioDTO atualizaBeneficiario = beneficiarioService.atualizarBeneficiario(id,beneficiarioDTO);
         return ResponseEntity.ok(atualizaBeneficiario);
     }
 
-
+    @ExceptionHandler
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> removerBeneficiario(@PathVariable("id") Long id) {
        beneficiarioService.removerBeneficiario(id);
