@@ -2,6 +2,7 @@ package com.beneficiarioapi.controller;
 
 import com.beneficiarioapi.dto.BeneficiarioDTO;
 import com.beneficiarioapi.dto.DocumentoDTO;
+import com.beneficiarioapi.exception.ResourceNotFoundException;
 import com.beneficiarioapi.service.BeneficiarioService;
 import com.beneficiarioapi.service.DocumentoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -46,6 +47,8 @@ public class BeneficiarioController {
 
     @GetMapping("/{id}/documentos")
     public ResponseEntity<List<DocumentoDTO>> listarDocumentosPorIdBeneficiario(@PathVariable Long id) {
+
+
         List<DocumentoDTO> listaDocumetos = documentoService.listarDocumentosPorIdBeneficiario(id);
 
         if(listaDocumetos.isEmpty()){

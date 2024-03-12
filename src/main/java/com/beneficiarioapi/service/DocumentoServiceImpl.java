@@ -4,6 +4,7 @@ import com.beneficiarioapi.Entity.Documento;
 import com.beneficiarioapi.convert.DocumentoDTOConverter;
 import com.beneficiarioapi.dto.DocumentoDTO;
 import com.beneficiarioapi.repository.DocumentoRepository;
+import org.apache.velocity.exception.ResourceNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +28,11 @@ public class DocumentoServiceImpl implements DocumentoService {
     public List<DocumentoDTO> listarDocumentosPorIdBeneficiario(Long id) {
 
         List<Documento> listaDocumentos = documentoRepository.findByBeneficiarioId(id);
+
+        if(listaDocumentos.isEmpty())
+        {
+            throw  new ResourceNotFoundException("Não existe documento para o beneficiario com o id: " + id);
+        }
 
         return listaDocumentos.stream()
                 .map(documento -> modelMapper.map(documento, DocumentoDTO.class))

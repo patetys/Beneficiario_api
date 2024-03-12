@@ -51,6 +51,10 @@ public class BeneficiarioServiceImpl implements BeneficiarioService {
     public List<BeneficiarioDTO> listarBeneficiarios() {
         List<Beneficiario> beneficiarios = beneficiarioRepository.findAll();
 
+        if (beneficiarios.isEmpty()) {
+            throw new ResourceNotFoundException("Não existe beneficiario cadastrado");
+        }
+
         return beneficiarios.stream()
                 .map(beneficiario -> modelMapper.map(beneficiario, BeneficiarioDTO.class))
                 .collect(Collectors.toList());
