@@ -4,12 +4,8 @@ import com.beneficiarioapi.dto.BeneficiarioDTO;
 import com.beneficiarioapi.dto.DocumentoDTO;
 import com.beneficiarioapi.service.BeneficiarioService;
 import com.beneficiarioapi.service.DocumentoService;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,22 +20,19 @@ public class BeneficiarioController {
 
     private final BeneficiarioService beneficiarioService;
     private final DocumentoService documentoService;
-    private final ModelMapper modelMapper;
 
-    public BeneficiarioController(BeneficiarioService beneficiarioService, DocumentoService documentoService, ModelMapper modelMapper) {
+    public BeneficiarioController(BeneficiarioService beneficiarioService, DocumentoService documentoService) {
         this.beneficiarioService = beneficiarioService;
         this.documentoService = documentoService;
-        this.modelMapper = modelMapper;
     }
 
-    @ExceptionHandler
+
     @PostMapping()
     public ResponseEntity<BeneficiarioDTO> cadastrarBeneficiario(@RequestBody @Valid BeneficiarioDTO BeneficiarioDto) {
         BeneficiarioDTO beneficiarioDTO = beneficiarioService.cadastrarBeneficiario(BeneficiarioDto);
         return new ResponseEntity<>(beneficiarioDTO,HttpStatus.CREATED);
     }
 
-    @ExceptionHandler
     @GetMapping()
     public ResponseEntity<List<BeneficiarioDTO>> listarBeneficiarios() {
         List<BeneficiarioDTO> listaBeneficiarios = beneficiarioService.listarBeneficiarios();
@@ -51,7 +44,6 @@ public class BeneficiarioController {
     }
 
 
-    @ExceptionHandler
     @GetMapping("/{id}/documentos")
     public ResponseEntity<List<DocumentoDTO>> listarDocumentosPorIdBeneficiario(@PathVariable Long id) {
         List<DocumentoDTO> listaDocumetos = documentoService.listarDocumentosPorIdBeneficiario(id);
@@ -62,14 +54,13 @@ public class BeneficiarioController {
         return ResponseEntity.ok(listaDocumetos);
     }
 
-    @ExceptionHandler
     @PutMapping("/{id}")
     public ResponseEntity<BeneficiarioDTO> atualizarBeneficiario(@PathVariable long id,  @RequestBody @Valid BeneficiarioDTO beneficiarioDTO) {
         BeneficiarioDTO atualizaBeneficiario = beneficiarioService.atualizarBeneficiario(id,beneficiarioDTO);
         return ResponseEntity.ok(atualizaBeneficiario);
     }
 
-    @ExceptionHandler
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> removerBeneficiario(@PathVariable("id") Long id) {
        beneficiarioService.removerBeneficiario(id);
