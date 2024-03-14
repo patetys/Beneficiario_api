@@ -2,16 +2,19 @@ package com.beneficiarioapi.controller;
 
 import com.beneficiarioapi.dto.BeneficiarioDTO;
 import com.beneficiarioapi.dto.DocumentoDTO;
-import com.beneficiarioapi.exception.ResourceNotFoundException;
 import com.beneficiarioapi.service.BeneficiarioService;
 import com.beneficiarioapi.service.DocumentoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
