@@ -34,7 +34,6 @@ public class BeneficiarioDTO {
     @NotBlank(message = "Telefone é obrigatório")
     private String telefone;
     @NotNull(message = "Data de nascimento é obrigatório")
-    @NotBlank(message = "Data de nascimento é obrigatório")
     private Date dataNascimento;
 
     private List<Documento> documentos = new ArrayList<>();;
