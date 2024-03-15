@@ -52,23 +52,13 @@ public class BeneficiarioController {
     @GetMapping()
     public ResponseEntity<List<BeneficiarioDTO>> listarBeneficiarios() {
         List<BeneficiarioDTO> listaBeneficiarios = beneficiarioService.listarBeneficiarios();
-
-        if(listaBeneficiarios.isEmpty()){
-            return  ResponseEntity.notFound().build();
-        }
         return  ResponseEntity.ok(listaBeneficiarios);
     }
 
 
     @GetMapping("/{id}/documentos")
     public ResponseEntity<List<DocumentoDTO>> listarDocumentosPorIdBeneficiario(@PathVariable Long id) {
-
-
         List<DocumentoDTO> listaDocumetos = documentoService.listarDocumentosPorIdBeneficiario(id);
-
-        if(listaDocumetos.isEmpty()){
-            return  ResponseEntity.notFound().build();
-        }
         return ResponseEntity.ok(listaDocumetos);
     }
 
