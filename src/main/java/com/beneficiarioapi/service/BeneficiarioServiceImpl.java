@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 
@@ -62,10 +63,10 @@ public class BeneficiarioServiceImpl implements BeneficiarioService {
 
 
     @Override
-    public BeneficiarioDTO atualizarBeneficiario(Long Id, BeneficiarioDTO beneficiarioDTO) {
+    public BeneficiarioDTO atualizarBeneficiario(Long id, BeneficiarioDTO beneficiarioDTO) {
 
-        Beneficiario updateBeneficiario = beneficiarioRepository.findById(Id)
-                .orElseThrow(() -> new ResourceNotFoundException("Beneficiario não existe com o id: " + Id));
+        Beneficiario updateBeneficiario = beneficiarioRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Beneficiario não existe com o id: " +  id));
 
         updateBeneficiario.setNome(beneficiarioDTO.getNome());
         updateBeneficiario.setTelefone(beneficiarioDTO.getTelefone());
@@ -78,6 +79,13 @@ public class BeneficiarioServiceImpl implements BeneficiarioService {
 
     @Override
     public void removerBeneficiario(Long id) {
+
+        Optional<Beneficiario> beneficiario = beneficiarioRepository.findById(id);
+        if( beneficiario.isEmpty())
+        {
+            throw new ResourceNotFoundException("Não existe beneficiario para excluir cadastrado com id: " + id);
+        }
+
         beneficiarioRepository.deleteById(id);
     }
 }
