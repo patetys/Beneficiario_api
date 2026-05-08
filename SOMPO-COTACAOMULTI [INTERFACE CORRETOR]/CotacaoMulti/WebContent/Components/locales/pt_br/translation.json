@@ -1,0 +1,44 @@
+{
+  "application": {
+    "name"							: "Via Corretor",
+    "version" 						: "1.0.0",
+    "title"							: "Via Corretor - Yasuda Marítima"
+  },
+  "buscaPeriodo": {
+    "tituloLegend"					: "Busca por Período",
+    "tituloCodCorretor"				: "Selecione um Corretor",
+    "tituloRamo"					: "Selecione um Ramo",
+    "periodoInicial"				: "Periodo Inicial",
+    "periodoFinal"					: "Periodo Final",
+    "placeholderPeriodoInicial"		: "Selecione o Período Inicial",
+    "placeholderPeriodoFinal"		: "Selecione o Período Final"
+  },
+  "buscaDetalhada": {
+  	"segurado" 						: "Segurado",
+  	"cpfCnpj" 						: "CPF / CNPJ",
+  	"apolice" 						: "Apólice",
+  	"endosso" 						: "Endosso",
+  	"item" 							: "Item",
+  	"placeholderSegurado" 			: "Digite o nome do segurado",
+  	"placeholderCpfCnpj" 			: "Digite o CPF ou CNPJ",
+  	"placeholderApolice" 			: "Digite a apólice",
+  	"placeholderEndosso" 			: "000000",
+  	"placeholderItem" 				: "000"
+  }, 
+  "grid": {
+  	"placeholderBusca" 				: "Filtre sua busca",
+  	"col01" 						: "Apólice",
+  	"col02"							: "Endosso",
+  	"col03"							: "Segurado",
+  	"col04"							: "Documento",
+  	"col05"							: "Emissão"
+  },
+  "bnt": {
+  	"pesquisa" 				: "Pesquisa",
+  	"download" 				: "Download",
+  	"imprimir" 				: "Imprimir"
+  }
+}
+
+
+

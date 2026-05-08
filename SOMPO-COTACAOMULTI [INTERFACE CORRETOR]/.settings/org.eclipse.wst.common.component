@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="sompo-cotacaomulti">
+        <wb-resource deploy-path="/" source-path="/CotacaoMulti/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="CotacaoMulti"/>
+        <property name="java-output-path" value="/CotacaoMulti/WebContent/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

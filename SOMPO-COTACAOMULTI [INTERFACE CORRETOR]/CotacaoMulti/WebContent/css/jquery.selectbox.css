@@ -1,0 +1,158 @@
+.caixa_select_custom{
+	float: left;
+}
+	
+	.caixa_select_custom .jquery-selectbox{
+		
+		margin: 0;
+		background-image: url(../images/select_custom.gif);
+	}
+	
+	
+		.caixa_select_custom .jquery-selectbox .jquery-selectbox-currentItem{
+			margin-right: 10px;
+		}
+		
+		.caixa_select_custom .jquery-selectbox .jquery-selectbox-moreButton {
+			width: 27px;
+			height: 31px;
+			background: url(../images/botoes/select.gif) no-repeat 0 0;
+		}
+		
+		.caixa_select_custom_w130 .jquery-selectbox .jquery-selectbox-currentItem{
+			width: 130px;
+		}
+		
+		.caixa_select_custom_w255 .jquery-selectbox .jquery-selectbox-currentItem{
+			width: 255px;
+		}
+
+.jquery-selectbox {
+	position: relative;
+	height: 31px;
+	width: 100%;
+	float: left;
+	margin: 0;
+	font-size: 12px;
+	color: #525252;
+	padding: 0;
+	/*background-image: url("../images/input_busca.gif");*/
+	
+	background: url("../images/246.png");
+}
+
+.caixa_select{
+	float: left;
+}
+
+.caixa_painel .caixa_select{
+	height: 38px;
+	background: url(../images/bg_titulo.gif) repeat-x 0 0;
+	padding: 10px 20px 0 10px;
+}
+
+	.caixa_painel .caixa_select .jquery-selectbox,
+	.caixa_cinza .caixa_select .jquery-selectbox{
+	
+		/*width: 197px;
+		background-image: url(../images/select_painel.gif);*/
+		
+		background: url("../images/250.gif");
+        width: 250px;
+	}
+	
+	.caixa_cinza .caixa_formulario .caixa_select .jquery-selectbox{
+		width: 177px;
+		background-image: url(../images/select_formulario.gif);
+		margin: 0;
+	}
+	
+		.caixa_cinza .caixa_formulario .caixa_select .jquery-selectbox .jquery-selectbox-currentItem{
+			width: 140px;
+		}
+		
+	
+	.caixa_cinza .caixa_formulario .caixa_select_2 .jquery-selectbox{
+		width: 77px;
+		background-image: url(../images/select_formulario2.gif);
+	}
+	
+		.caixa_cinza .caixa_formulario .caixa_select_2 .jquery-selectbox .jquery-selectbox-currentItem{
+			width: 40px;
+		}
+	
+.select_ramo{
+	float: left;
+}
+
+	.select_ramo .jquery-selectbox{
+		width: 193px;
+		margin: 0;
+		background-image: url(../images/select_ramo.gif);
+	}
+	
+.select_77 .jquery-selectbox{
+	width: 77px;
+	margin: 0 0 0 0;
+	background-image: url(../images/select/77.gif);
+}
+
+.select_177 .jquery-selectbox{
+	width: 177px;
+	margin: 0 0 0 0;
+	background-image: url(../images/select/177.gif);
+}
+	
+.jquery-selectbox.selecthover {
+}	
+
+.jquery-selectbox .jquery-selectbox-currentItem {
+	padding: 6px 0 6px 10px;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+	margin:  0;
+	color:#777;
+}
+
+.jquery-selectbox .jquery-selectbox-list {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 0px;
+	background: #fff;
+	width: 100%;
+	height: 120px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 1000;
+	border: 1px solid #e6e6e6;
+}
+
+.jquery-selectbox .jquery-selectbox-moreButton {
+	width: 25px;
+	height: 31px;
+	float: right;
+	cursor: pointer;
+}
+
+.jquery-selectbox .jquery-selectbox-item.listelementhover {
+	background: #e6e6e6;
+	cursor: pointer;
+}
+
+.jquery-selectbox .jquery-selectbox-item {
+	display: block;
+	cursor: default;
+	margin:  0;
+	padding: 9px 0 4px 0;
+	text-indent: 9px;
+	width: 100%;
+}
+
+/** ERROR classes **/
+form .error .jquery-selectbox {
+	color: #d00;
+	border-color: #d00;
+	background-image: url("../img/bg-TextFieldError.gif");
+}

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+<head>
+	<meta charset="UTF-8" /> 
+
+	<script type="text/javascript" src="/Components/YMPopup/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Components/YMPopup/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/Components/YMPopup/js/index.js"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="/Components/YMPopup/css/jquery-ui.css">
+</head>
+
+<body>
+	<h1>Teste</h1>
+	<a href="#" onclick="showLoading();">Clique Aquiii!!!</a>
+	
+	<div id="includedContent"></div>
+		
+	<script>
+		setInterval(function(){ hideLoading(); }, 10000);
+		$(document).ready(function() {initPopup("#includedContent")});
+	</script>
+</body>
+</html>

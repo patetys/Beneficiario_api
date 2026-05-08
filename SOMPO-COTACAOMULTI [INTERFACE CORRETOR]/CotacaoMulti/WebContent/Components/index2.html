@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+														<!-- CSS -->
+													
+		<!-- CHOSEN -->
+	<link rel="stylesheet" href="/Components/resources/chosen/sompo_chosen.css">
+			
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" type="text/css" href="/Components/resources/bootstrap/css/bootstrap.css">
+	
+	<!-- DATATABLE -->
+	
+	<link rel="stylesheet" type="text/css" href="/Components/resources/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/Components/media/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="/Components/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="/Components/resources/demo.css">
+	<link rel="stylesheet" type="text/css" href="/Components/resources/css/sompo_viaCorretor.css">
+	
+	<link rel="stylesheet" media="screen" href="/Components/YMPopup/css/jquery-ui.css" /> 
+		
+	
+</head>
+<body>
+<div id="popup"><div>
+
+		
+		<select id="cmbTeste" style="width:100px;"></select>
+		
+		<select id="" style="width:100px;"></select>
+		
+
+</body>
+
+									<!-- JAVASCRIPT -->
+	
+		<script src="/Components/resources/js/jquery.min.js"></script>
+		
+	<!-- DATATABLE -->
+	<script type="text/javascript" src="/Components/media/js/jquery.dataTables.js"></script>
+		
+	<!-- ACCORDION -->
+	<script src="/Components/resources/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/Components/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" src="/Components/resources/demo.js"></script>
+	<script type="text/javascript" src="/Components/resources/js/four_button.js"></script>
+	<script type="text/javascript" src="/Components/resources/js/ellipses.js"></script>
+
+	<!-- BOOTSTRAP -->
+	<script src="/Components/resources/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	
+	<!-- CHOSEN -->
+	<script src="/Components/resources/chosen/chosen.jquery.js" type="text/javascript"></script>
+		
+	<!-- JAVASCRIPT PADRAO -->
+	<script src="/Components/main.js" type="text/javascript"></script>
+
+
+	<!-- JAVASCRIPT PERSONALIZADO -->
+	<script src="/Components/YMPopup/js/index.js" type="text/javascript"></script>
+	<script src="js/ConsultaOficinaApp.js" type="text/javascript"></script>
+
+	
+	<script type="text/javascript">
+	
+	$().ready(function(){
+	
+	initPopup($("#popup")); 
+	
+		var urlCidade = "http://localhost/Components/teste.txt";
+		var dataTypeComboBox = "json";
+		var msgErroCidade = "falha";
+			
+		callAjax(urlCidade, callBackChosen, callError, "cmbTeste",dataTypeComboBox, "cidades", function(){}, msgErroCidade);	
+			
+	});
+	
+	</script>
+
+</html>

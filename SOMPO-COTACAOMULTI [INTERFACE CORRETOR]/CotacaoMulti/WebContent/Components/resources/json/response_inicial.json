@@ -1,0 +1,22 @@
+{
+    "apolice": 234234243,
+    "cnpj": "88888878234792347",
+   "cpf": "28556076800",
+    "endosso": 1,
+    "item": 2,
+    "mapCorretores": [
+        {
+            "textCorretor": "Billy Holiday",
+            "valueCorretor": "12313|4353|2345345"
+        }
+    ],
+    "listaRamos": [
+        {
+            "textRamo": "Automóvel",
+            "valueRamo": "AUTOMOVEL"
+        }
+    ],
+    "nomeSegurado": "Big Mama Thorton",
+    "periodoFinal": "11/11/2011",
+    "periodoInicial": "11/11/2010"
+}

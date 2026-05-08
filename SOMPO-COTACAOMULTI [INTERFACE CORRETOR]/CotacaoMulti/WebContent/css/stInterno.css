@@ -1,0 +1,239 @@
+body {
+	/*background-color: #E3E3E3;*/
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	font-family: Arial, Sans-serif;
+}
+*{
+	 border:none; 
+}
+h1{
+	width: 100%;
+	color: #0c223e;
+	font-size: 19px;
+	font-weight: 100px;
+	margin: 0.67em 0;
+	font-family: Arial;
+}
+a, .ymClick {
+	cursor: pointer;
+	font-size: 14px;
+	color: #0b1e37;
+	font-weight: bold;
+}
+.link {
+	cursor: pointer;
+	text-decoration: underline;
+}
+p {
+	color: #666666;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+label {
+	color: #444;
+	font-size: 12px;
+	margin-top: 9px;
+	margin-right: 10px;
+	float: left;
+	text-align: right;
+	font-family: Arial, Sans-serif;
+}
+input[type="text"], textarea {
+	background: #fafafa;
+	border: 1px solid #ececec;
+	color: #a8a8a8;
+	font-size: 13px;
+	padding: 6px 0 6px 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+select {
+	background: #fafafa;
+	border: 1px solid #ececec;
+	color: #a8a8a8;
+	font-size: 13px;
+	padding: 6px 0px 6px 10px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 5px 0pt 5px;
+	font-size: 12px;
+	color: #fff;
+	width: auto;
+	min-width: 99.9%;
+	text-align: left;
+}
+table thead tr th, table tfoot tr th{
+	background: #0b1e37;
+	padding: 15px 15px 10px 15px;
+	text-align: center;
+	color: #fff;
+}
+table thead tr th.first {
+	border-radius: 4px 0 0 0;
+}
+table thead tr th.last {
+	border-radius: 0 4px 0 0;
+}
+table tfoot tr th.first {
+	border-radius: 0 0 0 4px;
+}
+table tfoot tr th.last {
+	border-radius: 0 0 4px 0;
+}
+table tbody td {
+	border: 1px solid #fff;
+	color: #3D3D3D;
+    padding: 12px 20px 13px 18px;
+    background-color: #efefef;
+    vertical-align: top;
+    border: 1px solid #fff;
+    border-left: 1px solid #ddd;
+}
+table tbody tr.odd td { background-color: #eeeeee;}
+table tbody tr:last-child td {border-bottom: 1px solid #ffffff;}
+table * {font-size: 12px;}
+.caixa_select_custom .jquery-selectbox {
+	background-image: none ;
+	background: #fafafa;
+	border: 1px solid #ececec;
+	color: #a8a8a8;
+	font-size: 13px;
+	float: left;
+	margin-bottom: 10px;
+	
+}
+.caixa_select_custom .jquery-selectbox .jquery-selectbox-moreButton {
+	width: 30px;
+	height: 31px;
+	background: url(../images/botoes/seta-select.png) no-repeat right;
+}
+.jquery-selectbox .jquery-selectbox-item {
+	padding: 5px 0 5px 10px;
+	text-indent: 0px;
+	color: #55565A;
+	font-size: 11px;
+}
+.jquery-selectbox .jquery-selectbox-item.listelementhover {background-color:#efefef;}
+.jquery-selectbox-list.jquery-custom-selectboxes-replaced-list {
+	border: 1px solid #ececec;
+	margin: 0px 0 0 -1px;
+	height: auto !important;
+	max-height: 150px;
+	min-height: auto;
+}
+.jquery-selectbox .jquery-selectbox-currentItem {
+	color: #a8a8a8;
+	margin: 1px;
+	cursor: pointer;
+}
+.botao-azul {
+	cursor: pointer;
+	padding: 8px 20px;
+	background: #0b1e37;
+	border-radius: 4px;
+	float: left;
+	color: #fff;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	color: #fff !important;
+	font-size: 12px;
+	font-weight: bold;
+	font:Arial;
+	
+}
+.btn-mais2 {
+	background: url(../images/botoes/mais.png);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	float: right;
+	cursor: pointer;
+	margin: 3px 10px 0 0;
+}
+.btn-mais3 {
+	background: url(../images/botoes/mais.png);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	margin: 35px;
+}
+.btn-menos2 {
+	background: url(../images/botoes/menos.png);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	float: right;
+	cursor: pointer;
+	margin: 3px 10px 0 0;
+}
+.btn-menos3 {
+	background: url(../images/botoes/menos.png);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	margin: 35px;
+}
+
+.invisivel{opacity: 0;}
+.removeComp{display: none;}
+
+.secao {
+	width: 100%;
+	padding: 15px 30px;
+	clear: both;
+	float: left;
+	/* box-shadow: 0px 1px 3px #ccc; */
+	margin-bottom: 1px;
+	border-bottom: 1px solid #bbb;
+	box-sizing: border-box;
+	background: #fcfcfc;
+}
+
+.radioButton {
+	margin-top: 9px;
+	margin-right: 8px;
+}
+
+.txtAlignLeft {text-align: left;}
+.inner {margin: 0 auto; width: 50%;}
+.dado {font-size: 14px;}
+.fLeft {float: left;}
+.fRight {float: right;}
+.taLeft {text-align: left;}
+.taCenter {text-align: center;}
+.taRight {text-align: right;}
+.w97 {width:70px;}
+.w70 {width:70px;}
+.w80 {width:80px;}
+.w83 {width:83px;}
+.w100 {width:100px;}
+.w120 {width:120px;}
+.w121 {width:121px;}
+.w125 {width:125px;}
+.w150 {width:150px;}
+.w180 {width:180px;}
+.w200 {width:200px;}
+.w250 {width:250px;}
+.w300 {width:300px;}
+.w400 {width:400px;}
+.wFull {width:100%;}
+
+.margin-top7{margin-top: 7px;}
+.margin-top9{margin-top: 9px;}
+.margin-left90{margin-left: 90px;}
+.margin-top7n{margin-top: -7px;}
+
+.ymPgControles {text-align: center;}
+.ymPgControles a {margin:5px}
+a.ymPgAtual, a.ymPgAtual:hover{color: #666666; cursor:default}
+

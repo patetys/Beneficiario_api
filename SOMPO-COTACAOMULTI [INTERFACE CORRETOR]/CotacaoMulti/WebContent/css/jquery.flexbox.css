@@ -1,0 +1,27 @@
+/*copia yasuda.css abaixo*/
+.ffb-input {float:left;background-color: #FFFFFF;color: #4686BE;font-size: 11;padding-left: 5;border-color: #4686BE;border-width: 1px;border-style: solid;width: 160;}
+/*copia yasuda.css acima*/
+.ffb-input.watermark {color:#888;}
+.ffb-arrow {float:left;width:18px;height:17px;background-image:url(../images/sel.gif);}
+.ffb-arrow.out{background-position:0;}
+.ffb-arrow.over {background-position:-18px 0;}
+.ffb-arrow.active{background-position:-36px 0;}
+.ffb-no-results{padding: 2px;color:#888;font-style:italic;}
+.ffb {position:absolute;overflow:hidden;border:1px solid #7B9EBD;background-color:#fff;}
+.ffb .content {font-size: 10px;width: 250px;}
+.ffb .content .row {color:#555;clear:both;height: 20px;}
+
+
+.ffb-sel {cursor:pointer;cursor:hand;background-color:#ddd;}
+.ffb-match {background-color:#ff9; /* amarelo */text-transform: uppercase;color:#000;}
+
+#name_result{float:left;margin-right:4px;padding:2px;}
+#id_result{float:right;padding:2px}
+
+
+
+/* Paginacao */
+.ffb .paging {margin:0px;vertical-align:middle;background-color:#ccc;height:25px;width:100%}
+.ffb .page, .ffb a.page {font-size:10px;text-align:center;margin:2px;float:left;width:18px;height:15px;padding-top:5px;text-decoration: none;}
+.ffb .box {font-size:10px;text-align:center;width:180px;height:15px;margin:2px;float:left;display: none;}
+.ffb .summary {font-size:10px;float:right;margin:2px;height:15px;padding-top:5px;}*/

@@ -1,0 +1,32 @@
+{
+  "listApolices": 
+  [{
+  	"corretor"				:	"Cor Aliança",
+	"codCorr"				:	"0215412",
+	"codCorr2"				:	"0",
+	"codCorr3"				:	"0",
+  	"apolice"				:	"3252125412",
+	"endosso"				:	"000000",
+	"segurado"				:	"TRELIACO COMERCIAL LTDA",
+  	"documento"				:	"Via do Corretor",
+  	"emissao"				:	"20/10/2015",
+	"item"					:	"0001",
+  	"dadosApolice"			:	
+  		{
+			"endereco"				:	"Rua Coroel Meireles, 1364",
+			"cidade"				:	"São Paulo",
+			"uf"					:	"Sp",
+			"cep"					:	"32150240",
+			"enderecoCobranca"		:	"Rua Coroel Meireles, 1364",
+			"cidadeCobranca"		:	"São Paulo",
+			"ufCobranca"			:	"Sp",
+			"cepCobranca"			:	"32150240",
+			"CodSegurado"			:	"0000000",
+			"unidade"				:	"8510-MANGABEIRAS",
+			"executivoContas"		:	"1738-ADRIANA DE FA",
+			"vigenciaInicial" 		: 	"01/01/2015",
+			"vigenciaFinal"			: 	"01/01/2016",
+			"ramo"					:	"310-AUTOMOVEIS"
+		}
+  		}]
+  }  

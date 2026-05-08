@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.ejs.models.base.extensions.webappext:WebAppExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.ejs.models.base.extensions.webappext="webappext.xmi" xmi:id="WebAppExtension_1" reloadInterval="3" reloadingEnabled="true" additionalClassPath="" fileServingEnabled="true" directoryBrowsingEnabled="false" serveServletsByClassnameEnabled="true" contextRoot="/CotacaoMulti">
+  <webApp href="WEB-INF/web.xml#WebApp"/>
+  <jspAttributes xmi:id="JSPAttribute_1537200995565" name="reloadEnabled" value="true"/>
+  <jspAttributes xmi:id="JSPAttribute_1537200995566" name="reloadInterval" value="10"/>
+  <resourceRefExtensions xmi:id="ResourceRefExtension_1179778356058" connectionManagementPolicy="Default">
+    <resourceRef href="WEB-INF/web.xml#ResourceRef_1179778355949"/>
+  </resourceRefExtensions>
+</com.ibm.ejs.models.base.extensions.webappext:WebAppExtension>

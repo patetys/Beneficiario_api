@@ -1,0 +1,285 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.barraLogin {
+	font-size: 11;
+	background-color: #0E1C70;
+	color: #FFFFFF;
+	padding-left: 20;
+}
+
+.click:hover{
+	cursor:pointer;
+}
+
+.linkLogin {
+	font-size: 10;
+	color: #8FBCE4;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.miolo {
+	padding-left: 10;
+	background-color: #FFFFFF;
+	vertical-align: top;
+	color: #0E1C70;
+	font-size: 11;
+}
+.menu {
+	background-color: #8FBCE4;
+	padding-left: 7;
+	padding-top: 5;
+	padding-right: 7;
+	padding-bottom: 5;
+}
+.linkMenu {
+	font-size: 11;
+	color: #0E1C70;
+	font-weight: bold;
+	text-decoration: none;
+}
+.linkMenu:hover {
+	font-size: 11;
+	color: #0E1C70;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.texto {
+	vertical-align: top;
+	color: #8FBCE4;
+	font-size: 11;
+}
+.legenda {
+	color: #0E1C70;
+	font-size: 10;
+}
+.legendaVermelha {
+	color: #FF0000;
+	font-size: 14;
+	font-style: italic;
+	font-weight: bold;
+}
+.legendaAzul {
+	color: #0E1C70;
+	font-size: 12;
+}
+.legendaProtocolo {
+	color: #0E1C70;
+	font-size: 14;
+}
+.legendaGrande {
+	color: #0E1C70;
+	font-size: 16;
+	font-weight: bold;
+}
+.boxTitulo {
+	font-size: 11;
+	color: #0E1C70;
+	font-weight: bold;
+	padding-left: 9;
+}
+.boxInputSemBorda {
+	background-color: #FFFFFF;
+	color: #FF0000;
+	font-size: 11;
+	border-color: #4686BE;
+	border-width: 0px;
+	border-style: solid;
+	padding-left: 5;
+	width: 100;
+}
+.boxInput {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 160;
+}
+.boxInputP {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 40;
+}
+.boxInputM {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 90;
+}
+.boxInputG {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 140;
+
+}
+.boxInputGG {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 390;
+
+}
+.boxInputDate {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 70;
+}
+.boxFileUpload {
+	background-color: #FFFFFF;
+	color: #4686BE;
+	font-size: 11;
+	padding-left: 5;
+	border-color: #4686BE;
+	border-width: 1px;
+	border-style: solid;
+	width: 390;
+}
+.boxTexto {
+	font-size: 11;
+	color: #000000;
+	padding-left: 5;
+}
+.boxTextoWrap {
+	font-size: 11;
+	color: #000000;
+	padding-left: 5;
+	text-overflow: ellipsis;
+	max-width: 10px;
+    overflow: hidden;	
+}
+.boxTextoArea {
+	font: normal;
+	font-size: 12;
+	padding-left: 5;
+	width: 400;
+	color: #4686BE;
+}
+.rodape {
+	font-size: 10;
+	color: #28458F;
+	line-height: 2;
+}
+.linkRodape {
+	font-size: 10;
+	color: #28458F;
+	text-decoration: none;
+}
+.linkRodape:hover {
+	font-size: 10;
+	color: #28458F;
+	text-decoration: underline;
+}
+.tabelaHeader {
+	font-size: 10;
+	background-color: #0E1C70;
+	color: #FFFFFF;
+}
+.tabelaLinha1 {
+	font-size: 10;
+	background-color: #E5E5E5;
+	color: #7C7C7C;
+}
+.tabelaLinha2 {
+	font-size: 10;
+	background-color: #F3F3F3;
+	color: #7C7C7C;
+}
+.linkTabela {
+	font-size: 10;
+	color: #0E1C70;
+	text-decoration: none;
+}
+.linkTabela:hover {
+	font-size: 10;
+	color: #0E1C70;
+	text-decoration: underline;
+}
+.tabelaAction {
+	background-color: #8FBCE4;
+}
+.tabelaTitulo {
+	font-size: 12;
+	background-color: #0E1C70;
+	font-weight: bold;
+	padding-left: 5;
+	color: #FFFFFF;
+}
+.tabelaColunaEsquerda {
+	font-size: 11;
+	font-weight: bold;
+}
+.tabelaColunaDireita {
+	font-size: 11;
+	text-align: left;
+}
+.tabelaDivisoria {
+	background-color: #D3D3D3;
+	height: 1px;
+}
+.tabelaDivisoriaBold {
+	background-color: #0E1C70;
+	height: 2px;
+}
+
+.cbutton {
+	background: #0E1C70;
+	background: -webkit-linear-gradient(to bottom, #FFF -18%, #0E1C70 60%);
+	background: -o-linear-gradient(to bottom, #FFF -18%, #0E1C70 60%);
+	background: -moz-linear-gradient(to bottom, #FFF -18%, #0E1C70 60%);
+	background: linear-gradient(to bottom, #FFF -18%, #0E1C70 60%);
+	background: -ms-linear-gradient(to bottom, #FFF -18%, #0E1C70 60%);
+	color: #ffffff;
+	padding: 3px;
+	font-size: 12px;
+	box-shadow: 0px 0px 1px 1px #0E1C70;
+	cursor: pointer;
+	position: relative;	
+	font-weight: bold;
+	border-radius: 2px;
+	text-decoration:none; 
+}
+
+/*IE 9*/
+@media screen\9 {
+	.cbutton {
+		background: #0E1C70;
+		color: #ffffff;
+		padding: 6px 6px 6px 6px;
+		cursor: pointer;
+	}
+}
+
+
+.cbuttonMensage{
+	padding: 6px 16px 6px 15px !important;
+}
+
+.tabelaAction {
+	background-color: #8FBCE4;
+}

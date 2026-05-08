@@ -1,0 +1,22 @@
+{
+  "apolice": "",
+  "cnpj": "",
+  "cpf": "",
+  "endosso": "",
+  "item": "",
+  "mapCorretores": [
+    {
+      "textCorretor": "",
+      "valueCorretor": ""
+    }
+  ],
+  "listaRamos": [
+    {
+      "textRamo": "",
+      "valueRamo": ""
+    }
+  ],
+  "nomeSegurado": "",
+  "periodoFinal": "",
+  "periodoInicial": ""
+}

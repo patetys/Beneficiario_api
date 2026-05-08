@@ -1,0 +1,10 @@
+CotacaoMulti/.factorypath
+CotacaoMulti/.project
+CotacaoMulti/.settings/*
+CotacaoMulti/build/*
+CotacaoMulti/bin/*
+.classpath
+.factorypath
+.project
+WebContent/*
+/bin/

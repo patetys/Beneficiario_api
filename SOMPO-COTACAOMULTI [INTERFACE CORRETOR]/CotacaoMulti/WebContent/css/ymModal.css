@@ -1,0 +1,111 @@
+#ymmMascara {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9000;
+	width: 2000px;
+	height: 1000px;
+	background-color: #000;
+}
+
+#ymmMoldura {
+	margin: 0;
+	float: left;
+	display: none;
+	width: 954px;
+	height: 550px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #FFF;
+	z-index: 9900;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+
+#ymmFecharDiv {
+	text-align: right;
+	float: right;
+}
+
+#ymmTituloDiv {
+	float: left;
+}
+
+#ymmTituloDiv h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#ymmFecharDiv img {
+	height: 20px;
+	width: auto;
+}
+
+#ymmFecharDiv img:hover {
+	cursor: pointer;
+}
+
+#ymmConteudo {
+	display: block;
+	height: auto;
+	overflow: auto;
+	/*border-style: solid;
+	border-width: 1px;*/
+}
+
+.ymmTravarScroll {
+	overflow: hidden;
+}
+
+.ymmDialog #ymmConteudo{
+	padding: 3px;
+  padding-bottom: 5px;
+	background: white;
+}
+
+#ymmMoldura.ymmDialog{
+	background: lightgray;
+  height : auto !important;
+  width : auto !important;
+  padding : 5px !important;
+  padding-bottom : 8px !important;
+	font-size:16px !important;
+}
+
+.ymmDialog #ymmBotoesDialog {
+  text-align : center;
+}
+
+.ymmDialog #ymmDialogConteudo {
+  padding: 8px 14px 0px;
+}
+
+.ymmDialog #ymmBotoesDialog input[type="button"] {
+	padding: 5px 10px;
+	  margin: 0px 5px; 
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #2d4d84;
+	border: 2px outset #f2f4f7;
+}
+
+/* altera o cursor para objetos com ação no click */
+.ymmDialog #ymmBotoesDialog input[type="button"]:hover {
+	cursor: pointer;
+  border-style:inset;
+}
+
+.ymFechar {
+	background: url(../images/botoes/btn-xis.png);
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	float: right;
+	cursor: pointer;
+	margin: 3px 10px 0 0;
+}

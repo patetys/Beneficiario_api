@@ -1,0 +1,62 @@
+{
+    "data": [
+        {
+            "codigoCorretor": "132123",
+            "codigoCorretor2": "123",
+            "codigoCorretor3": "1234",
+            "dadosApolice": {
+                "cepCorrespondencia": "123412",
+                "cepCorretor": "342",
+                "cidadeCorrespondencia": "4723472",
+                "cidadeCorretor": "4723472",
+                "codigoProdutor": "4723472",
+                "codigoUnidade": "4723472",
+                "dataVigenciaFinal": "11/11/2011",
+                "dataVigenciaInicial": "11/12/2011",
+                "enderecoCorrespondencia": "4723472",
+                "enderecoCorretor": "4723472",
+                "nomeProdutor": "4723472",
+                "nomeUnidade": "4723472",
+                "ufCorrespondencia": "sp",
+                "ufCorretor": "sp"
+            },
+            "dataEmissaoApolice": "11/11/2011",
+            "item": "0",
+            "nomeSegurado": "Teste",
+            "numeroApolice": "54325",
+            "numeroEndosso": "345",
+            "tipoDocumento": "Via"
+        },
+        {
+            "codigoCorretor": "132123",
+            "codigoCorretor2": "123",
+            "codigoCorretor3": "1234",
+            "dadosApolice": {
+                "cepCorrespondencia": "123412",
+                "cepCorretor": "342",
+                "cidadeCorrespondencia": "4723472",
+                "cidadeCorretor": "4723472",
+                "codigoProdutor": "4723472",
+                "codigoUnidade": "4723472",
+                "dataVigenciaFinal": "11/11/2011",
+                "dataVigenciaInicial": "11/12/2011",
+                "enderecoCorrespondencia": "4723472",
+                "enderecoCorretor": "4723472",
+                "nomeProdutor": "4723472",
+                "nomeUnidade": "4723472",
+                "ufCorrespondencia": "sp",
+                "ufCorretor": "sp"
+            },
+            "dataEmissaoApolice": "11/11/2011",
+            "item": "0",
+            "nomeSegurado": "Teste 2",
+            "numeroApolice": "54325",
+            "numeroEndosso": "345",
+            "tipoDocumento": "Via"
+        }
+    ]
+}
+	
+	
+	
+	
